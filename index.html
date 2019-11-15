@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Literata:400,500,500i,600,700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title"> Survey form</h1>
+        <p id="description"><em>Recommend me to improve my skills.</em></p>
+    </div>
+    <section>
+        <div>
+            <form id="survey-form">
+                <div class="form-element">
+                    <p class="form-label" id="name-label">Name</p>
+                    <input class="input" required id="name" type="text" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-element">
+                    <p class="form-label" id="email-label">Email</p>
+                    <input class="input" required id="email" type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-element">
+                    <p class="form-label" id="number-label">Age(optional)</p>
+                    <input class="input" required id="number" type="number" name="age" min="5" max="150" placeholder="Age">
+                </div>
+                <div class="form-element">
+                    <p class="form-label">Which option best describes your current role?</p>
+                    <select class="input" id="dropdown" name="roles">
+                        <option value="zero" disabled selected>Your current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full-time Job</option>
+                        <option value="learner">Full-time learner</option>
+                        <option value="not-say">Prefer not to Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                 <div class="form-element">
+                    <p class="form-label">Which programming languages do you know ?</p>
+                    <label for="Javascript">
+                        <input value="Javascript" type="checkbox" name="languages"> Javascript<br />
+                    </label>
+                    <label for="Java">
+                        <input value="Java" type="checkbox" name="languages"> Java<br />
+                    </label>
+                    <label for="Python">
+                        <input value="Python" type="checkbox" name="languages"> Python<br />
+                    </label>
+                    <label for="C++">
+                        <input value="C++" type="checkbox" name="languages"> C++<br />
+                    </label>
+                    <label for="Ruby">
+                        <input value="Ruby" type="checkbox" name="languages"> Ruby<br />
+                    </label>
+                    <label for="Others">
+                        <input value="Others" type="checkbox" name="languages"> Others
+                    </label>
+
+                </div>
+                <div class="form-element">
+                    <p class="form-label"> Would you hire me for work? </p>
+                    <label for="recommend">
+                        <input type="radio" value="definitely" name="recommend" checked>"Definitely"<br />
+                    </label>
+                    <label for="recommend">
+                        <input type="radio" value="maybe" name="recommend">"Maybe"<br />
+                    </label>
+                    <label for="recommend">
+                        <input type="radio" value="not-sure" name="recommend">"Not sure"
+                    </label>
+                </div>
+               
+                <div class="form-element">
+                    <p class="form-label">Any suggestions or feedback ?</p>
+                    <textarea name="comments" id="comments" placeholder="Enter your comment here." ></textarea>
+                </div>
+                <div class="form-element">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

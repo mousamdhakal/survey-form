@@ -1,0 +1,44 @@
+body{
+    background-image: url(./brown-close-up-hd-wallpaper-172289.jpg);
+    background-size: cover;
+    font-family: 'Literata', serif;
+}
+
+#header {
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: block;
+    margin: 5px auto;
+    background-color: #eee; 
+    width: 50%;
+    padding: 20px;
+    opacity:0.95;
+}
+
+.form-element {
+    margin: 15px;
+}
+
+.form-label {
+    position: relative;
+    top:15px;
+}
+
+#submit {
+    background-color: green;
+    width: 100%;
+    padding: 10px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+}
+.input {
+    width: 100%;
+    height: 1.5em;
+}
+
+
